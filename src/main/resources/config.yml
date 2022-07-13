@@ -1,0 +1,10 @@
+# Cerulean Plugin Configuration
+
+# [ Cerulean Features ]
+features:
+  # The Player Logging feature sends messages when a player joins or leaves if it is enabled.
+  player-logging:
+    enable: true
+    # You can add color codes to join and leave messages using '&' and the color code. For example, yellow is '&e'.
+    join-message: "&e%player% joined the game"
+    quit-message: "&e%player% left the game"

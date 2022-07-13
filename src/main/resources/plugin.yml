@@ -1,0 +1,6 @@
+name: Cerulean
+version: '${project.version}'
+main: me.blueysh.cerulean.Cerulean
+api-version: 1.19
+authors: [ Blueysh ]
+description: A useful, unbloated utility plugin.
