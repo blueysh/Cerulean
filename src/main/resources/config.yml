@@ -17,6 +17,12 @@ features:
 
 # [ Cerulean Commands ]
 commands:
-  # The Cerulean fly command. Players with the permission "cerulean.fly" will be able to use this, if enabled.
+  # The Cerulean fly command. Players with the permission "cerulean.fly" will be able to toggle fly mode, if enabled.
   fly:
+    enable: true
+  # The Cerulean invsee command. Players with the permission "cerulean.invsee" will be able to view player inventories, if enabled.
+  invsee:
+    enable: true
+  # The Cerulean damage command. Players with the permission "cerulean.damage" will be able to damage players via command, if enabled.
+  damage:
     enable: true

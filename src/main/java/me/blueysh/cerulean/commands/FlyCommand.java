@@ -19,10 +19,10 @@ public class FlyCommand extends Command {
             // Toggle flight for the sender.
             if (p.getAllowFlight()) {
                 p.setAllowFlight(false);
-                new Message(ChatColor.GREEN + "Flight disabled.");
+                new Message(ChatColor.GREEN + "Flight disabled.").send(p);
             } else {
                 p.setAllowFlight(true);
-                new Message(ChatColor.GREEN + "Flight enabled.");
+                new Message(ChatColor.GREEN + "Flight enabled.").send(p);
             }
         } else {
             // Toggle flight for the targeted player.
@@ -31,13 +31,13 @@ public class FlyCommand extends Command {
             if (t != null) {
                 if (t.getAllowFlight()) {
                     t.setAllowFlight(false);
-                    new Message(ChatColor.GREEN + "Flight disabled for player %.".replace("%", t.getName())).send(commandSender);
+                    new Message(ChatColor.GREEN + "Flight disabled for player %.".replace("%", t.getName())).send(p);
                 } else {
                     t.setAllowFlight(true);
-                    new Message(ChatColor.GREEN + "Flight enabled for player %.".replace("%", t.getName())).send(commandSender);
+                    new Message(ChatColor.GREEN + "Flight enabled for player %.".replace("%", t.getName())).send(p);
                 }
             } else {
-                new Message(ChatColor.RED + "Unknown player %.".replace("%", strings[0])).send(commandSender);
+                new Message(ChatColor.RED + "Unknown player %.".replace("%", strings[0])).send(p);
                 return;
             }
         }

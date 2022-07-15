@@ -3,8 +3,7 @@ package me.blueysh.cerulean;
 import games.negative.framework.BasePlugin;
 import lombok.Getter;
 import lombok.Setter;
-import me.blueysh.cerulean.commands.CeruleanCommand;
-import me.blueysh.cerulean.commands.FlyCommand;
+import me.blueysh.cerulean.commands.*;
 import me.blueysh.cerulean.listeners.PlayerLoggingListener;
 import me.blueysh.cerulean.utils.Logger;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -33,7 +32,9 @@ public final class Cerulean extends BasePlugin {
                 new CeruleanCommand()
         );
         
-        if (getPluginConfig().getBoolean("command.fly.enable")) registerCommands( new FlyCommand() );
+        if (getPluginConfig().getBoolean("commands.fly.enable")) registerCommands( new FlyCommand() );
+        if (getPluginConfig().getBoolean("commands.invsee.enable")) registerCommands( new InvseeCommand() );
+        if (getPluginConfig().getBoolean("commands.damage.enable")) registerCommands( new DamageCommand() );
 
         registerListeners(
             new PlayerLoggingListener()
