@@ -8,7 +8,7 @@ features:
     # You can add color codes to join and leave messages using '&' and the color code. For example, yellow is '&e'.
     join-message: "&e%player% joined the game"
     quit-message: "&e%player% left the game"
-  # The AFK feature tracks players' AFK status, if enabled.
+  # **[THIS FEATURE IS NOT IMPLEMENTED YET]** The AFK feature tracks players' AFK status, if enabled.
   afk:
     enable: true
     # The AFK Timeout value defines how long to wait before marking a player as AFK in milliseconds.
@@ -25,4 +25,7 @@ commands:
     enable: true
   # The Cerulean damage command. Players with the permission "cerulean.damage" will be able to damage players via command, if enabled.
   damage:
+    enable: true
+  # The Cerulean short gamemode command. Players with the permisison "cerulean.gamemode" will be able to switch gamemodes of players with a the command "gm", if enabled.
+  short-gamemode:
     enable: true

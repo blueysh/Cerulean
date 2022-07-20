@@ -35,6 +35,7 @@ public final class Cerulean extends BasePlugin {
         if (getPluginConfig().getBoolean("commands.fly.enable")) registerCommands( new FlyCommand() );
         if (getPluginConfig().getBoolean("commands.invsee.enable")) registerCommands( new InvseeCommand() );
         if (getPluginConfig().getBoolean("commands.damage.enable")) registerCommands( new DamageCommand() );
+        if (getPluginConfig().getBoolean("commands.short-gamemode.enable")) registerCommands( new ShortGamemodeCommand() );
 
         registerListeners(
             new PlayerLoggingListener()
