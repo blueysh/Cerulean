@@ -34,11 +34,11 @@ public class ShortGamemodeCommand extends Command {
     }
     @Override
     public void onCommand(CommandSender sender, String[] strings) {
-        Player p;
-        if (strings.length < 2) p = Bukkit.getPlayerExact(strings[1]);
-        else p = ((Player) sender);
-
         try {
+            Player p;
+            if (strings.length >= 2) p = Bukkit.getPlayerExact(strings[1]);
+            else p = ((Player) sender);
+            assert p != null;
             switch (strings[0]) {
                 case "adventure":
                 case "a":
@@ -63,8 +63,7 @@ public class ShortGamemodeCommand extends Command {
                 default:
                     new Message(ChatColor.RED + "Invalid gamemode!").send(sender);
             }
-        } catch (NullPointerException ignored) {
-        } finally {
+        } catch (NullPointerException ex) {
             new Message(ChatColor.RED + "Invalid target!").send(sender);
         }
     }

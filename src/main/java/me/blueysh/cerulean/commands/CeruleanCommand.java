@@ -11,6 +11,6 @@ import org.bukkit.command.CommandSender;
 public class CeruleanCommand extends Command {
     @Override
     public void onCommand(CommandSender commandSender, String[] strings) {
-        new Message(ChatColor.translateAlternateColorCodes('&', "&l&3[Cerulean]&r&3 This server is running Cerulean version " + Cerulean.getVersion())).send(commandSender);
+        new Message(ChatColor.translateAlternateColorCodes('&', "&l&3[Cerulean]&r&3 This server is running Cerulean version " + Cerulean.getInstance().getDescription().getVersion() + " by " + Cerulean.getInstance().getDescription().getAuthors())).send(commandSender);
     }
 }

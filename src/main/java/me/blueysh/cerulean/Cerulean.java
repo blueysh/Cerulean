@@ -16,9 +16,6 @@ public final class Cerulean extends BasePlugin {
 
     private static FileConfiguration config;
 
-    @Getter
-    private static final String version = "1.0";
-
     @Override
     public void onEnable() {
         super.onEnable();
