@@ -14,6 +14,10 @@ features:
     # The AFK Timeout value defines how long to wait before marking a player as AFK in milliseconds.
     # By default, this is 60000l, for one minute.
     afk-timeout: 60000l
+  # The Chat feature allows you to change the formatting of chat messages, if enabled.
+  chat:
+    enable: true
+    chat-format: "%s: %s"
 
 # [ Cerulean Commands ]
 commands:

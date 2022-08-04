@@ -16,7 +16,7 @@ import java.util.Collections;
 public class ShortGamemodeCommand extends Command {
     public ShortGamemodeCommand() {
         setTabComplete(((commandSender, strings) -> {
-            if (strings.length == 0) {
+            if (strings.length == 1) {
                 ArrayList<String> c = new ArrayList<>();
                 c.add("adventure");
                 c.add("survival");
