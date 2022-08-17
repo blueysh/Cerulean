@@ -1,8 +1,8 @@
 name: Cerulean
 version: '${project.version}'
-main: me.blueysh.cerulean.Cerulean
+main: me.itstotallyjan.cerulean.Cerulean
 api-version: 1.19
-authors: [ Blueysh ]
+authors: [ itstotallyjan ]
 description: A useful, unbloated utility plugin.
 softdepend: [ LuckPerms ]
 commands:

@@ -1,4 +1,4 @@
-package me.blueysh.cerulean.utils;
+package me.itstotallyjan.cerulean.utils;
 
 public class ConfigPaths {
     public interface Commands {

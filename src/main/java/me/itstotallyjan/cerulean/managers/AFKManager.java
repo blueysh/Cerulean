@@ -1,10 +1,10 @@
-package me.blueysh.cerulean.managers;
+package me.itstotallyjan.cerulean.managers;
 
 import java.util.HashMap;
 
 import org.bukkit.entity.Player;
 
-import me.blueysh.cerulean.Cerulean;
+import me.itstotallyjan.cerulean.Cerulean;
 
 public class AFKManager {
     

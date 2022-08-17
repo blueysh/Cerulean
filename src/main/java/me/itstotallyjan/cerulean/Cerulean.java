@@ -1,13 +1,13 @@
-package me.blueysh.cerulean;
+package me.itstotallyjan.cerulean;
 
 import games.negative.framework.BasePlugin;
 import lombok.Getter;
 import lombok.Setter;
-import me.blueysh.cerulean.commands.*;
-import me.blueysh.cerulean.listeners.ChatListener;
-import me.blueysh.cerulean.listeners.PlayerLoggingListener;
-import me.blueysh.cerulean.utils.ConfigPaths;
-import me.blueysh.cerulean.utils.Logger;
+import me.itstotallyjan.cerulean.commands.*;
+import me.itstotallyjan.cerulean.listeners.ChatListener;
+import me.itstotallyjan.cerulean.listeners.PlayerLoggingListener;
+import me.itstotallyjan.cerulean.utils.ConfigPaths;
+import me.itstotallyjan.cerulean.utils.Logger;
 import net.luckperms.api.LuckPerms;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;

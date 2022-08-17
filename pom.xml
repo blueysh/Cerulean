@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.blueysh</groupId>
+    <groupId>me.itstotallyjan</groupId>
     <artifactId>Cerulean</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
@@ -47,7 +47,7 @@
                     <relocations>
                         <relocation>
                             <pattern>games.negative.framework</pattern>
-                            <shadedPattern>me.blueysh.cerulean</shadedPattern>
+                            <shadedPattern>me.itstotallyjan.cerulean</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

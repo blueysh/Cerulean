@@ -1,7 +1,7 @@
-package me.blueysh.cerulean.listeners;
+package me.itstotallyjan.cerulean.listeners;
 
-import me.blueysh.cerulean.Cerulean;
-import me.blueysh.cerulean.utils.ConfigPaths;
+import me.itstotallyjan.cerulean.Cerulean;
+import me.itstotallyjan.cerulean.utils.ConfigPaths;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;

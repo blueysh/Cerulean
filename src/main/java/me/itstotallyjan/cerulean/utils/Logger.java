@@ -1,4 +1,4 @@
-package me.blueysh.cerulean.utils;
+package me.itstotallyjan.cerulean.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

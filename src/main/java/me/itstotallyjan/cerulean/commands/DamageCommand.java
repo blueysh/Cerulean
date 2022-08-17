@@ -1,4 +1,4 @@
-package me.blueysh.cerulean.commands;
+package me.itstotallyjan.cerulean.commands;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

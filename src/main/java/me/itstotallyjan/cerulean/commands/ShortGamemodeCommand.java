@@ -1,4 +1,4 @@
-package me.blueysh.cerulean.commands;
+package me.itstotallyjan.cerulean.commands;
 
 import games.negative.framework.command.Command;
 import games.negative.framework.command.annotation.CommandInfo;

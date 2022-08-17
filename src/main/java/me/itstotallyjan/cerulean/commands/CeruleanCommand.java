@@ -1,9 +1,9 @@
-package me.blueysh.cerulean.commands;
+package me.itstotallyjan.cerulean.commands;
 
 import games.negative.framework.command.Command;
 import games.negative.framework.command.annotation.CommandInfo;
 import games.negative.framework.message.Message;
-import me.blueysh.cerulean.Cerulean;
+import me.itstotallyjan.cerulean.Cerulean;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
