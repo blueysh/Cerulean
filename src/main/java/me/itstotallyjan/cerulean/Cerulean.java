@@ -33,11 +33,12 @@ public final class Cerulean extends BasePlugin {
         registerCommands(
                 new CeruleanCommand()
         );
-        
+
         if (getPluginConfig().getBoolean(ConfigPaths.Commands.Fly.ENABLED)) registerCommands( new FlyCommand() ); Logger.log(Logger.Level.INFO, "Registered fly command.");
         if (getPluginConfig().getBoolean(ConfigPaths.Commands.Invsee.ENABLED)) registerCommands( new InvseeCommand() ); Logger.log(Logger.Level.INFO, "Registered invsee command.");
         if (getPluginConfig().getBoolean(ConfigPaths.Commands.Damage.ENABLED)) registerCommands( new DamageCommand() ); Logger.log(Logger.Level.INFO, "Registered damage command.");
         if (getPluginConfig().getBoolean(ConfigPaths.Commands.ShortGameMode.ENABLED)) registerCommands( new ShortGamemodeCommand() ); Logger.log(Logger.Level.INFO, "Registered shortgamemode command.");
+        if (getPluginConfig().getBoolean(ConfigPaths.Features.Chat.UNSIGNED_CHAT_MESSAGES)) Logger.log(Logger.Level.WARN, "You have enabled unsigned chat messages. Minecraft clients will not be able to verify chat messages, meaning vanilla chat reporting will be disabled."); registerCommands( new MessageCommand() ); Logger.log(Logger.Level.INFO, "Registered unsigned messaging command.");
 
         registerListeners(
             new PlayerLoggingListener()

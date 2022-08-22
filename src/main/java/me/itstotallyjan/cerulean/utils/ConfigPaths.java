@@ -19,6 +19,7 @@ public class ConfigPaths {
         interface Chat {
             String ENABLED = "features.chat.enable";
             String CHAT_FORMAT = "features.chat.chat-format";
+            String UNSIGNED_CHAT_MESSAGES = "features.chat.unsigned-chat-messages";
         }
         interface PlayerLogging {
             String ENABLED = "features.player-logging.enable";

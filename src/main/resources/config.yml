@@ -12,7 +12,8 @@ features:
   chat:
     enable: true
     chat-format: "%s: %s"
-
+    # Enabling unsigned chat messages will send chat messages as system messages, removing chat reporting.
+    unsigned-chat-messages: false
 # [ Cerulean Commands ]
 commands:
   # The Cerulean fly command. Players with the permission "cerulean.fly" will be able to toggle fly mode, if enabled.

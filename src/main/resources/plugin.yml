@@ -3,6 +3,6 @@ version: '${project.version}'
 main: me.itstotallyjan.cerulean.Cerulean
 api-version: 1.19
 authors: [ itstotallyjan ]
-description: A useful, unbloated utility plugin.
+description: A simple, modular utility plugin.
 softdepend: [ LuckPerms ]
 commands:
