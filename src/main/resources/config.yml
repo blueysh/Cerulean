@@ -8,12 +8,6 @@ features:
     # You can add color codes to join and leave messages using '&' and the color code. For example, yellow is '&e'.
     join-message: "&e%player% joined the game"
     quit-message: "&e%player% left the game"
-  # **[THIS FEATURE IS NOT IMPLEMENTED YET]** The AFK feature tracks players' AFK status, if enabled.
-  afk:
-    enable: true
-    # The AFK Timeout value defines how long to wait before marking a player as AFK in milliseconds.
-    # By default, this is 60000l, for one minute.
-    afk-timeout: 60000l
   # The Chat feature allows you to change the formatting of chat messages, if enabled.
   chat:
     enable: true
