@@ -13,9 +13,20 @@ import org.bukkit.entity.Player;
 public class HealCommand extends Command {
     @Override
     public void onCommand(CommandSender commandSender, String[] strings) {
+        if (!(commandSender instanceof Player)) {
+            if (strings.length == 0) {
+                new Message(ChatColor.RED + "To use this command as console, you must specify a player.").send(commandSender);
+                return;
+            }
+            Player player = Bukkit.getPlayerExact(strings[0]);
+            player.setHealth(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
+            new Message(ChatColor.GREEN + "You have healed %.".replace("%", player.getName())).send(commandSender);
+            return;
+        }
         Player player = (Player) commandSender;
         if (strings.length == 0) {
             player.setHealth(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
+            new Message(ChatColor.GREEN + "You have been healed.").send(player);
         } else {
             Player target = Bukkit.getPlayerExact(strings[0]);
             if (target == null) {
