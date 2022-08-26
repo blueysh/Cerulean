@@ -28,3 +28,27 @@ commands:
   # The Cerulean short gamemode command. Players with the permisison "cerulean.gamemode" will be able to switch gamemodes of players with a the command "gm", if enabled.
   short-gamemode:
     enable: true
+  # The Cerulean help override command. When players run /help, they will see your server's custom message instead of the default help message, if enabled.
+  help-override:
+    enable: false
+    # The help message to display when players run /help.
+    # You can add color codes to the message using '&' and the color code. For example, yellow is '&e'.
+    message: "&eWelcome to the server!\n&bDiscord: discord.gg/abcdefg\nWebsite: abcdefg.net"
+  # The Cerulean findplayer command. Players with the perission "cerulean.findplayer" will be able to use /findplayer to see the location and world of a player, if enabled.
+    findplayer:
+      enable: true
+  # The Cerulean nick command. Players with the permission "cerulean.nick" will be able to use /nick to change their nickname, if enabled.
+  # Players with the permission "cerulean.nick.others" will be able to use /nick <player> to change other players' nicknames.
+    nick:
+      enable: true
+  # The Cerulean opengui command. Players with the permission "cerulean.opengui" will be able to open gui views like crafting benches, if enabled.
+    opengui:
+      enable: true
+  # The Cerulean heal command. Players with the permission "cerulean.heal" will be able to use /heal to heal themselves and others, if enabled.
+    heal:
+      enable: true
+  # The Cerulean rules command. Players will be able to view your server's custom rules by running /rules, if enabled.
+    rules:
+      enable: true
+      # You can add color codes to the rules message using '&' and the color code. For example, yellow is '&e'.
+      message: "&eRules:\n&b- Do not grief\n&b- Do not spam\n&b- Be kind"

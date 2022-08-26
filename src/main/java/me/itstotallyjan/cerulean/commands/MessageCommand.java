@@ -10,7 +10,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandInfo(name="msg",description="Privately messages another player.",aliases={"w","tell","message","whisper"})
+@CommandInfo(name="msg",description="Privately messages another player.",aliases={"w","tell","message","whisper"},permission="cerulean.msg")
 public class MessageCommand extends Command {
     @Override
     public void onCommand(CommandSender commandSender, String[] strings) {
